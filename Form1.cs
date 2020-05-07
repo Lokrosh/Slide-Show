@@ -27,6 +27,11 @@ namespace Slide_Show
 
         }
 
+        private void loadButton_Click(object sender, EventArgs e)
+        {
+            DialogResult result = fdb.ShowDialog();
+        }
+
         private void startButton_Click(object sender, EventArgs e)
         {
             if (!playing)
@@ -47,8 +52,7 @@ namespace Slide_Show
         {
             counter++;
 
-            string[] images = Directory.GetFiles(fdb.SelectedPath, "*.*");
-
+            string[] images = Directory.GetFiles(fdb.SelectedPath, "*.*",System.IO.SearchOption.AllDirectories);
 
             if (counter > images.Length - 1)
             {
@@ -56,6 +60,7 @@ namespace Slide_Show
             }
 
             picBox.Image = Image.FromFile(images[counter]);
+            //Out of memory error possible, needs fix
 
             var imageSize = picBox.Image.Size;
             var fitSize = picBox.ClientSize;
@@ -64,15 +69,11 @@ namespace Slide_Show
                 PictureBoxSizeMode.Zoom : PictureBoxSizeMode.CenterImage;
         }
 
-        private void loadButton_Click(object sender, EventArgs e)
-        {
-            DialogResult result = fdb.ShowDialog();
-        }
-
         private void picBox_Click(object sender, EventArgs e)
         {
             counter++;
         }
+        //want to move to next pick on pic click
 
         private void speedInput_Click(object sender, EventArgs e)
         {
@@ -86,6 +87,8 @@ namespace Slide_Show
             {
                 speedInput.Focus();
             }
+            //Need to throw error for empty string
+
             string userSpeedInput = speedInput.Text;
 
             int imageSpeed;
@@ -95,8 +98,11 @@ namespace Slide_Show
             //    Console.WriteLine(imageSpeed);
             //else
             //    Console.WriteLine("please enter a number");
+            //Need to throw error for non-int OR int out of range
 
             timer1.Interval = imageSpeed;
         }
+
+
     }
 }
