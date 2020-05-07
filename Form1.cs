@@ -16,6 +16,7 @@ namespace Slide_Show
         int counter = 1;
         FolderBrowserDialog fdb = new FolderBrowserDialog();
         bool playing = false;
+        private List<string> Files;
 
         public Form1()
         {
@@ -60,7 +61,6 @@ namespace Slide_Show
             }
 
             picBox.Image = Image.FromFile(images[counter]);
-            //Out of memory error possible, needs fix
 
             var imageSize = picBox.Image.Size;
             var fitSize = picBox.ClientSize;
@@ -103,6 +103,9 @@ namespace Slide_Show
             timer1.Interval = imageSpeed;
         }
 
-
+        private void randomButton_Click(object sender, EventArgs e)
+        {
+            //Need to create toggle that sets state of random images
+        }
     }
 }

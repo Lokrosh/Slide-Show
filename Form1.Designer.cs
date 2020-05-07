@@ -236,6 +236,7 @@
             this.randomButton.Name = "randomButton";
             this.randomButton.Size = new System.Drawing.Size(110, 36);
             this.randomButton.Text = "Random";
+            this.randomButton.Click += new System.EventHandler(this.randomButton_Click);
             // 
             // toolStripSeparator4
             // 
