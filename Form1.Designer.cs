@@ -51,7 +51,10 @@
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.speedInputNull = new System.Windows.Forms.ErrorProvider(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+<<<<<<< HEAD
             this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
+=======
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -62,7 +65,10 @@
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedInputNull)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
+=======
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             this.SuspendLayout();
             // 
             // splitContainer1
@@ -86,9 +92,14 @@
             this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
+<<<<<<< HEAD
             this.splitContainer1.Size = new System.Drawing.Size(926, 439);
             this.splitContainer1.SplitterDistance = 371;
             this.splitContainer1.SplitterWidth = 2;
+=======
+            this.splitContainer1.Size = new System.Drawing.Size(2150, 1255);
+            this.splitContainer1.SplitterDistance = 1057;
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             this.splitContainer1.TabIndex = 0;
             // 
             // picBox
@@ -99,7 +110,11 @@
             this.picBox.Location = new System.Drawing.Point(0, 0);
             this.picBox.Margin = new System.Windows.Forms.Padding(2);
             this.picBox.Name = "picBox";
+<<<<<<< HEAD
             this.picBox.Size = new System.Drawing.Size(926, 371);
+=======
+            this.picBox.Size = new System.Drawing.Size(2150, 1057);
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             this.picBox.TabIndex = 0;
             this.picBox.TabStop = false;
             this.picBox.Click += new System.EventHandler(this.picBox_Click);
@@ -114,7 +129,11 @@
             this.panel1.Location = new System.Drawing.Point(0, 3);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
+<<<<<<< HEAD
             this.panel1.Size = new System.Drawing.Size(926, 63);
+=======
+            this.panel1.Size = new System.Drawing.Size(2150, 189);
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             this.panel1.TabIndex = 0;
             // 
             // feedbackPanel
@@ -126,8 +145,13 @@
             this.feedbackPanel.Location = new System.Drawing.Point(0, 26);
             this.feedbackPanel.Margin = new System.Windows.Forms.Padding(2);
             this.feedbackPanel.Name = "feedbackPanel";
+<<<<<<< HEAD
             this.feedbackPanel.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.feedbackPanel.Size = new System.Drawing.Size(922, 33);
+=======
+            this.feedbackPanel.Padding = new System.Windows.Forms.Padding(5);
+            this.feedbackPanel.Size = new System.Drawing.Size(2146, 135);
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             this.feedbackPanel.TabIndex = 1;
             // 
             // feedbackLabel
@@ -315,7 +339,10 @@
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedInputNull)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+<<<<<<< HEAD
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
+=======
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
             this.ResumeLayout(false);
 
         }
@@ -343,7 +370,10 @@
         private System.Windows.Forms.ToolStripButton speedButton;
         private System.Windows.Forms.ErrorProvider speedInputNull;
         private System.Windows.Forms.ErrorProvider errorProvider1;
+<<<<<<< HEAD
         private System.Windows.Forms.ErrorProvider errorProvider2;
+=======
+>>>>>>> 89bf2b9484b93364800deb0ba0c1dd7624e71282
     }
 }
 
