@@ -50,6 +50,8 @@
             this.toolOutput = new System.Windows.Forms.ToolStripLabel();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.speedInputNull = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.errorProvider2 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -59,12 +61,15 @@
             this.feedbackPanel.SuspendLayout();
             this.toolStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedInputNull)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
+            this.splitContainer1.Margin = new System.Windows.Forms.Padding(2);
             this.splitContainer1.Name = "splitContainer1";
             this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
             // 
@@ -77,12 +82,13 @@
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.splitContainer1.Panel2.Controls.Add(this.panel1);
-            this.splitContainer1.Panel2.Margin = new System.Windows.Forms.Padding(5);
-            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.splitContainer1.Panel2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.splitContainer1.Panel2.Padding = new System.Windows.Forms.Padding(0, 3, 0, 0);
             this.splitContainer1.Panel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
             this.splitContainer1.Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.splitContainer1_Panel2_Paint);
-            this.splitContainer1.Size = new System.Drawing.Size(2150, 1255);
-            this.splitContainer1.SplitterDistance = 1063;
+            this.splitContainer1.Size = new System.Drawing.Size(926, 439);
+            this.splitContainer1.SplitterDistance = 371;
+            this.splitContainer1.SplitterWidth = 2;
             this.splitContainer1.TabIndex = 0;
             // 
             // picBox
@@ -91,8 +97,9 @@
             this.picBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picBox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBox.Location = new System.Drawing.Point(0, 0);
+            this.picBox.Margin = new System.Windows.Forms.Padding(2);
             this.picBox.Name = "picBox";
-            this.picBox.Size = new System.Drawing.Size(2150, 1063);
+            this.picBox.Size = new System.Drawing.Size(926, 371);
             this.picBox.TabIndex = 0;
             this.picBox.TabStop = false;
             this.picBox.Click += new System.EventHandler(this.picBox_Click);
@@ -104,10 +111,10 @@
             this.panel1.Controls.Add(this.feedbackPanel);
             this.panel1.Controls.Add(this.toolStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel1.Location = new System.Drawing.Point(0, 5);
-            this.panel1.Margin = new System.Windows.Forms.Padding(5);
+            this.panel1.Location = new System.Drawing.Point(0, 3);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(2150, 183);
+            this.panel1.Size = new System.Drawing.Size(926, 63);
             this.panel1.TabIndex = 0;
             // 
             // feedbackPanel
@@ -116,10 +123,11 @@
             this.feedbackPanel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.feedbackPanel.Controls.Add(this.feedbackLabel);
             this.feedbackPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.feedbackPanel.Location = new System.Drawing.Point(0, 50);
+            this.feedbackPanel.Location = new System.Drawing.Point(0, 26);
+            this.feedbackPanel.Margin = new System.Windows.Forms.Padding(2);
             this.feedbackPanel.Name = "feedbackPanel";
-            this.feedbackPanel.Padding = new System.Windows.Forms.Padding(5);
-            this.feedbackPanel.Size = new System.Drawing.Size(2146, 129);
+            this.feedbackPanel.Padding = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.feedbackPanel.Size = new System.Drawing.Size(922, 33);
             this.feedbackPanel.TabIndex = 1;
             // 
             // feedbackLabel
@@ -127,9 +135,10 @@
             this.feedbackLabel.AutoSize = true;
             this.feedbackLabel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.feedbackLabel.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.feedbackLabel.Location = new System.Drawing.Point(5, 5);
+            this.feedbackLabel.Location = new System.Drawing.Point(2, 3);
+            this.feedbackLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.feedbackLabel.Name = "feedbackLabel";
-            this.feedbackLabel.Size = new System.Drawing.Size(36, 25);
+            this.feedbackLabel.Size = new System.Drawing.Size(19, 13);
             this.feedbackLabel.TabIndex = 0;
             this.feedbackLabel.Text = "....";
             // 
@@ -151,10 +160,11 @@
             this.toolStripSeparator5,
             this.toolOutput});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
-            this.toolStrip1.MaximumSize = new System.Drawing.Size(0, 50);
-            this.toolStrip1.MinimumSize = new System.Drawing.Size(800, 50);
+            this.toolStrip1.MaximumSize = new System.Drawing.Size(0, 26);
+            this.toolStrip1.MinimumSize = new System.Drawing.Size(400, 26);
             this.toolStrip1.Name = "toolStrip1";
-            this.toolStrip1.Size = new System.Drawing.Size(2146, 50);
+            this.toolStrip1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStrip1.Size = new System.Drawing.Size(922, 26);
             this.toolStrip1.Stretch = true;
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
@@ -164,6 +174,7 @@
             this.startButton.AutoSize = false;
             this.startButton.BackColor = System.Drawing.SystemColors.ButtonFace;
             this.startButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.startButton.Enabled = false;
             this.startButton.ForeColor = System.Drawing.SystemColors.WindowText;
             this.startButton.Image = ((System.Drawing.Image)(resources.GetObject("startButton.Image")));
             this.startButton.ImageTransparentColor = System.Drawing.Color.Magenta;
@@ -175,7 +186,7 @@
             // toolStripSeparator1
             // 
             this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator1.Size = new System.Drawing.Size(6, 26);
             // 
             // loadButton
             // 
@@ -213,11 +224,9 @@
             // 
             // speedInput
             // 
-            this.speedInput.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.speedInput.Name = "speedInput";
-            this.speedInput.Size = new System.Drawing.Size(100, 50);
+            this.speedInput.Size = new System.Drawing.Size(52, 26);
             this.speedInput.Text = "5000";
-            this.speedInput.Click += new System.EventHandler(this.speedInput_Click);
             // 
             // toolStripSeparator3
             // 
@@ -241,7 +250,7 @@
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 50);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(6, 26);
             // 
             // loopButton
             // 
@@ -264,7 +273,7 @@
             // toolOutput
             // 
             this.toolOutput.Name = "toolOutput";
-            this.toolOutput.Size = new System.Drawing.Size(30, 44);
+            this.toolOutput.Size = new System.Drawing.Size(16, 23);
             this.toolOutput.Text = "...";
             // 
             // timer1
@@ -276,13 +285,22 @@
             // 
             this.speedInputNull.ContainerControl = this.splitContainer1;
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // errorProvider2
+            // 
+            this.errorProvider2.ContainerControl = this;
+            // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(2150, 1255);
+            this.ClientSize = new System.Drawing.Size(926, 439);
             this.Controls.Add(this.splitContainer1);
-            this.MinimumSize = new System.Drawing.Size(800, 600);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.MinimumSize = new System.Drawing.Size(408, 331);
             this.Name = "Form1";
             this.Text = "Slide Show";
             this.splitContainer1.Panel1.ResumeLayout(false);
@@ -296,6 +314,8 @@
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.speedInputNull)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider2)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -322,6 +342,8 @@
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.ToolStripButton speedButton;
         private System.Windows.Forms.ErrorProvider speedInputNull;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
+        private System.Windows.Forms.ErrorProvider errorProvider2;
     }
 }
 
